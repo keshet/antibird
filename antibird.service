@@ -1,0 +1,9 @@
+[Unit]
+Description=Start AntiBird Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/volumio/antibird.py
+
+[Install]
+WantedBy=multi-user.target
